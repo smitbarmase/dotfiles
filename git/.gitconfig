@@ -1,0 +1,20 @@
+[user]
+	name = Smit Barmase
+	email = heysmitbarmase@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBsA3f0X0ZaWKtJX+xrTV0f+Z8Nc+RT0wa6OiQY2pwwI
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[core]
+	excludesFile = /Users/smit/.gitignore_global
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedSignersFile = ~/.ssh/allowed_signers
+[commit]
+	gpgsign = true

@@ -1,0 +1,8 @@
+[
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-e": ["editor::MoveToEndOfLine", { "stop_at_soft_wraps": false }]
+    }
+  }
+]
