@@ -23,4 +23,7 @@ if test (uname) = Darwin
     alias zed-nightly "/Applications/\"Zed Nightly.app\"/Contents/MacOS/zed"
     
     eval "$(/opt/homebrew/bin/brew shellenv)"
+
+    zoxide init fish | source
 end
+
